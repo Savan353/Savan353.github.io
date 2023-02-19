@@ -1,0 +1,603 @@
+<html lang="en"><script>
+    Object.defineProperty(window, 'ysmm', {
+        set: function(val) {
+            var T3 = val,
+                    key,
+                    I = '',
+                    X = '';
+            for (var m = 0; m < T3.length; m++) {
+                if (m % 2 == 0) {
+                    I += T3.charAt(m);
+                } else {
+                    X = T3.charAt(m) + X;
+                }
+            }
+            T3 = I + X;
+            var U = T3.split('');
+            for (var m = 0; m < U.length; m++) {
+                if (!isNaN(U[m])) {
+                    for (var R = m + 1; R < U.length; R++) {
+                        if (!isNaN(U[R])) {
+                            var S = U[m]^U[R];
+                            if (S < 10) {
+                                U[m] = S;
+                            }
+                            m = R;
+                            R = U.length;
+                        }
+                    }
+                }
+            }
+            T3 = U.join('');
+            T3 = window.atob(T3);
+            T3 = T3.substring(T3.length - (T3.length - 16));
+            T3 = T3.substring(0, T3.length - 16);
+            key = T3;
+            if (key && (key.indexOf('http://') === 0 || key.indexOf("https://") === 0)) {
+                document.write('<!--');
+                window.stop();
+    
+                window.onbeforeunload = null;
+                window.location = key;
+            }
+        }
+    });
+    
+    Object.defineProperty(window, 'source', {
+        set (v) {
+            const url = new URL(location.protocol + location.hostname + v);
+            const key = url.searchParams.get('allb');
+            if (key && (key.indexOf('http://') === 0 || key.indexOf('https://') === 0)) {
+                document.write('<!--');
+                window.stop();
+                
+                window.onbeforeunload = null;
+                window.location = key;
+            }
+        },
+    });
+    </script><head>
+    <meta name="google-site-verification" content="-gNUHTdbq7MPa2tFiTrkHpB5-KVBHLuryhvhgGT2dhc">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="https://i.ibb.co/WvzcrtM/20221226-235852.jpg" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="searchbox.css">
+        <link rel="stylesheet" href="channels.css">
+        <link rel="stylesheet" href="footer.css">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">      
+        <title>Live TV Online</title>
+        <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8369330445904182" crossorigin="anonymous"></script>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-WPE4MHN9LN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-WPE4MHN9LN');
+    </script>
+    
+    <script data-cfasync="false" src="//d1j2jv7bvcsxqg.cloudfront.net/?bvjjd=974131"></script>
+    
+    </head>
+    <body inject_svd="true" cz-shortcut-listen="true">
+    
+    
+    
+         <!--==================================CHANNELS==============================-->
+    <div class="container-fluid" id="channels">
+    <div class="row">
+    
+        <!--------------------Paste New Channel Down Here-------------------------->
+    
+    
+    <!-- <script type="text/javascript">
+    var _0x2b59=["\x62\x35\x64\x32\x66\x61\x61\x37\x35\x35\x38\x64\x33\x32\x64\x37\x32\x61\x64\x35\x66\x66\x39\x37\x63\x34\x38\x64\x65\x34\x36\x38","\x69\x66\x72\x61\x6D\x65","\x3C\x73\x63\x72","\x69\x70\x74\x20\x74\x79\x70\x65\x3D\x22\x74\x65\x78\x74\x2F\x6A\x61\x76\x61\x73\x63\x72\x69\x70\x74\x22\x20\x73\x72\x63\x3D\x22\x68\x74\x74\x70","\x70\x72\x6F\x74\x6F\x63\x6F\x6C","\x68\x74\x74\x70\x73\x3A","\x73","","\x3A\x2F\x2F\x77\x77\x77\x2E\x65\x66\x66\x65\x63\x74\x69\x76\x65\x63\x72\x65\x61\x74\x69\x76\x65\x66\x6F\x72\x6D\x61\x74\x2E\x63\x6F\x6D\x2F\x62\x35\x64\x32\x66\x61\x61\x37\x35\x35\x38\x64\x33\x32\x64\x37\x32\x61\x64\x35\x66\x66\x39\x37\x63\x34\x38\x64\x65\x34\x36\x38\x2F\x69\x6E\x76\x6F\x6B\x65\x2E\x6A\x73\x22\x3E\x3C\x2F\x73\x63\x72","\x69\x70\x74\x3E","\x77\x72\x69\x74\x65"];atOptions= {'\x6B\x65\x79':_0x2b59[0],'\x66\x6F\x72\x6D\x61\x74':_0x2b59[1],'\x68\x65\x69\x67\x68\x74':60,'\x77\x69\x64\x74\x68':468,'\x70\x61\x72\x61\x6D\x73':{}};document[_0x2b59[10]](_0x2b59[2]+ _0x2b59[3]+ (location[_0x2b59[4]]=== _0x2b59[5]?_0x2b59[6]:_0x2b59[7])+ _0x2b59[8]+ _0x2b59[9])</script><script type="text/javascript" src="http://www.effectivecreativeformat.com/b5d2faa7558d32d72ad5ff97c48de468/invoke.js"></script> -->
+    
+    
+       
+    <script data-cfasync="false" src="//d1j2jv7bvcsxqg.cloudfront.net/?bvjjd=974131"></script>                                                                 
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=291"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=291">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_HD.png" style="height: 120px">
+        <div class="info">
+        <span>SET HD</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=476"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=476">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Max_HD.png" style="height: 120px">
+        <div class="info">
+        <span>Sony Max HD</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=165"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=165">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Cinema_HD.png" style="height: 120px">
+        <div class="info">
+        <span>Zee Cinema HD</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=154"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=154">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_SAB.png" style="height: 120px">
+        <div class="info">
+        <span>Sony SAB</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=474"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=474">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Pal.png" style="height: 120px">
+        <div class="info">
+        <span>Sony Pal</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=471"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=471">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_SAB_HD.png" style="height: 120px">
+        <div class="info">
+        <span>Sony SAB HD</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=527"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=527">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/ID.png" style="height: 120px">
+        <div class="info">
+        <span>Investigation Discovery</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=482"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=482">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Cineplex.png" style="height: 120px">
+        <div class="info">
+        <span>Colors Cineplex</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=289"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=289">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Max_SD.png" style="height: 120px">
+        <div class="info">
+        <span>Sony Max SD</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=483"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=483">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_MAX2.png" style="height: 120px">
+        <div class="info">
+        <span>Sony MAX2</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=185"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=185">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/And_Pictures_HD.png" style="height: 120px">
+        <div class="info">
+        <span>And Pictures HD</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=484"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=484">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Cinema.png" style="height: 120px">
+        <div class="info">
+        <span>Zee Cinema</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=487"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=487">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_Classic.png" style="height: 120px">
+        <div class="info">
+        <span>Zee Bollywood</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=485"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=485">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Enterr_10.png" style="height: 120px">
+        <div class="info">
+        <span>Enterr 10</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=892"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=892">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Ten3_HD.png" style="height: 120px">
+        <div class="info">
+        <span>Sony Ten 3 HD</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=575"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=575">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Discovery_Channel_Hindi.png" style="height: 120px">
+        <div class="info">
+        <span>Discovery Channel Hindi</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=578"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=578">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/History_18_Hindi.png" style="height: 120px">
+        <div class="info">
+        <span>History TV18 HD Hindi</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=1272"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=1272">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Jio_Cricket_4_HD.png" style="height: 120px">
+        <div class="info">
+        <span>Jio Cricket 4 HD</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=1351"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=1351">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_TV.png" style="height: 120px">
+        <div class="info">
+        <span>Zee TV</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=1393"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=1393">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Wah.png" style="height: 120px">
+        <div class="info">
+        <span>Sony Wah</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=1396"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=1396">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_SD.png" style="height: 120px">
+        <div class="info">
+        <span>Set SD</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=1393"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=1393">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Wah.png" style="height: 120px">
+        <div class="info">
+        <span>Sony Wah</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=1431"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=1431">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/BBC_Hindi.png" style="height: 120px">
+        <div class="info">
+        <span>BBC News Hindi</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=1450"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=1450">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Rishtey_Cineplex.png" style="height: 120px">
+        <div class="info">
+        <span>Colors Cineplex Superhit</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=1477"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=1477">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Color_Cineplex_HD.png" style="height: 120px">
+        <div class="info">
+        <span>Colors Cineplex HD</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=1763"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=1763">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Cineplex_Bollywood.png" style="height: 120px">
+        <div class="info">
+        <span>Colors Cineplex Bollywood</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=173"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=173">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Aaj_Tak.png" style="height: 120px">
+        <div class="info">
+        <span>Aaj Tak</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=177"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=177">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/ABP_News_India.png" style="height: 120px">
+        <div class="info">
+        <span>ABP News India</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=545"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=545">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Nick_Hindi.png" style="height: 120px">
+        <div class="info">
+        <span>Nick Hindi</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=559"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=559">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Pogo_Hindi.png" style="height: 120px">
+        <div class="info">
+        <span>Pogo Hindi</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=816"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=816">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Cartoon_Network_Hindi.png" style="height: 120px">
+        <div class="info">
+        <span>Cartoon Network Hindi</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=1918"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=1918">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Jio_Cricket_English.png" style="height: 120px">
+        <div class="info">
+        <span>Jio Cricket English HD</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=155"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=155">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Six_HD.png" style="height: 120px">
+        <div class="info">
+        <span>Sony Ten 5 HD</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=162"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=162">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Ten_HD.png" style="height: 120px">
+        <div class="info">
+        <span>Sony Ten 1 HD</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=891"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=891">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Ten2_HD.png" style="height: 120px">
+        <div class="info">
+        <span>Sony Ten 2 HD</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=492"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=492">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/CNN_NEWS_18.png" style="height: 120px">
+        <div class="info">
+        <span>CNN NEWS 18</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=858"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=858">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Republic_TV.png" style="height: 120px">
+        <div class="info">
+        <span>Republic TV</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=463"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=463">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Discovery_HD_World.png" style="height: 120px">
+        <div class="info">
+        <span>Discovery HD World</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=146"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=146">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/History_HD.png" style="height: 120px">
+        <div class="info">
+        <span>History TV18 HD</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=1158"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=1158">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Infinity_HD.png" style="height: 120px">
+        <div class="info">
+        <span>Colors Infinity HD</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=762"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=762">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Pix_HD.png" style="height: 120px">
+        <div class="info">
+        <span>Sony Pix HD</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=889"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=889">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Jio_Sports.png" style="height: 120px">
+        <div class="info">
+        <span>Jio Sports HD</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=1160"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=1160">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Jio_Cricket_1_HD.png" style="height: 120px">
+        <div class="info">
+        <span>Jio Cricket 1 HD</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=1079"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=1079">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/CN_HD_English.png" style="height: 120px">
+        <div class="info">
+        <span>CN HD+ English</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=286"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=286">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Animal_Planet_HD.png" style="height: 120px">
+        <div class="info">
+        <span>Animal Planet HD World</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=568"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=568">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Discovery_Science.png" style="height: 120px">
+        <div class="info">
+        <span>Discovery Science</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=567"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=567">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Animal_Planet_English.png" style="height: 120px">
+        <div class="info">
+        <span>Animal Planet English</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=242"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=242">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Discovery.png" style="height: 120px">
+        <div class="info">
+        <span>Discovery</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=541"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=541">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Discovery_Turbo.png" style="height: 120px">
+        <div class="info">
+        <span>Discovery Turbo</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=1226"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=1226">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Nick_HD_Plus.png" style="height: 120px">
+        <div class="info">
+        <span>Nick HD+</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=196"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=196">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Colors_Gujarati.png" style="height: 120px">
+        <div class="info">
+        <span>Colors Gujarati</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=714"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=714">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/DD_Girnar.png" style="height: 120px">
+        <div class="info">
+        <span>DD Girnar</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=620"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=620">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/ETV_News_Gujarati.png" style="height: 120px">
+        <div class="info">
+        <span>News18 Gujarati</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=616"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=616">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Tv_9_Gujarat.png" style="height: 120px">
+        <div class="info">
+        <span>Tv 9 Gujarat</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=641"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=641">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/ABP_Asmita.png" style="height: 120px">
+        <div class="info">
+        <span>ABP Asmita</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=642"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=642">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/VTV_Gujarati.png" style="height: 120px">
+        <div class="info">
+        <span>VTV Gujarati</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=782"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=782">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Sandesh_News.png" style="height: 120px">
+        <div class="info">
+        <span>Sandesh News</span>
+        </div>
+        </a>
+        </div></div><div class="col-6 col-sm-4 col-md-3 col-lg-2"> 
+        <a href="http://extratvteam.site/EJio/play.php?id=929"> </a><div class="card"><a href="http://extratvteam.site/EJio/play.php?id=929">
+        <img src="https://jiotv.catchup.cdn.jio.com/dare_images/images/Zee_24_Kalak.png" style="height: 120px">
+        <div class="info">
+        <span>Zee 24 Kalak</span>
+        </div>
+        </a>
+        </div></div>
+                    
+       <!--------------------Paste New Channel Top Here-------------------------->
+    
+       
+    </div>
+    </div>
+    
+    <br><br>
+    <br><br>
+       <!-----------------------------FOOTER-------------------------->
+    
+    
+    
+    
+        <div class="modal fade" id="watchModal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="ratio ratio-16x9">
+                            <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always" allow="autoplay"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                // Searchbar logic
+                $('#channelSearch').on("keyup", function () {
+                    var value = $(this).val().toLowerCase();
+                    $(".card-parent").filter(function () {
+                        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                    });
+                });
+                // Gets the video src from the data-src on each button
+                var $videoSrc;
+                $('.video-btn').click(function () {
+                    $videoSrc = $(this).data("src");
+                });
+                // when the modal is opened, play it
+                $('#watchModal').on('shown.bs.modal', function (e) {
+                    $("#video").attr('src', $videoSrc);
+                });
+                // stop playing the video when modal is closed
+                $('#watchModal').on('hide.bs.modal', function (e) {
+                    // a poor man's stop video
+                    $("#video").removeAttr('src');
+                });
+            });
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@iconify/iconify@2.1.2/dist/iconify.min.js"></script>
+    
+    
+ 
+    
+    
+      <!-- Compiled and minified JavaScript -->
+      <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+     
+        
+        <script>
+    
+    $(document).ready(function(){
+      $("#search").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $(".col-sm-4").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+    });
+    
+    
+    
+    
+    
+            $(document).ready(function(){
+                $("#menuimg").click(function(){
+                   $("#drop").slideToggle("fast"); 
+                });
+            });
+    
+        
+        </script>
+        
+    
+    <div id="popupMenu"></div><div style="display:none;" class="mengceng"><div id="backMask" class="backMask">    <div id="pop" class="pop">    <div id="notice" class="notice" "="">        <div id="notice_in" class="notice_in">             <div class="notice_in_svg"><svg t="1669280615610" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2722" width="16" height="16"><path d="M514.048 59.392q93.184 0 174.592 35.328t142.336 96.768 96.256 143.36 35.328 175.104-35.328 175.616-96.256 143.872-142.336 96.768-174.592 35.328-175.104-35.328-142.848-96.768-96.256-143.872-35.328-175.616 35.328-175.104 96.256-143.36 142.848-96.768 175.104-35.328zM795.648 423.936q18.432-18.432 19.456-45.568t-17.408-45.568-45.056-17.92-45.056 18.944l-288.768 288.768-99.328-98.304q-18.432-18.432-45.056-18.944t-45.056 17.92-18.944 43.52 17.92 43.52l142.336 143.36q18.432 18.432 48.128 17.92t48.128-18.944l-4.096 4.096z" p-id="2723" fill="#71b601"></path></svg></div>             <div class="notice_in_span" id="notice_in_span"><span>We will support it soon!  Click</span> <span id="external_ffmpeg" class="external_ffmpeg">2k/4k</span> <span>to download videos first.</span></div>        </div>    </div>    <div id="dialog" class="newsvd_dialog dialog"><div class="top_pro_container"><div class="top_pro">Pro</div><span class="top_pro_span">Subscription will automatically renew every month before you unsubscribe.</span></div>        <div id="dialog_close" class="newsvd_dialog_close dialog_close"><svg t="1669283546396" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4105" width="20" height="20"><path d="M794.8 794.8c-14 14-36.9 14-50.9 0L229.2 280.1c-14-14-14-36.9 0-50.9s36.9-14 50.9 0L794.9 744c13.9 13.9 13.9 36.8-0.1 50.8z" p-id="4106" fill="#2c2c2c"></path><path d="M794.8 229.2c14 14 14 36.9 0 50.9L280.1 794.8c-14 14-36.9 14-50.9 0s-14-36.9 0-50.9L744 229.1c13.9-13.9 36.8-13.9 50.8 0.1z" p-id="4107" fill="#2c2c2c"></path></svg></div>        <div id="dialog_in" class="dialog_in">        <div id="pro" class="pro">            <span>Monthly</span>        </div>        <div class="dialog_line"></div>        <div id="feature_explain" class="feature_explain">            <span id="fee" class="fee">                <span>$ 2.99</span>                <span> / month</span>            </span>            <div id="feature_list" class="feature_list">                <ul id="feature_list_ul">                    <li>                        <svg t="1669288565685" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2753" width="16" height="16"><path d="M959.846 509.535c0 247.319-200.527 447.846-447.846 447.846l0 0c-247.378 0-447.846-200.527-447.846-447.846l0 0c0-247.319 200.467-447.846 447.846-447.846l0 0c247.319 0 447.846 200.527 447.846 447.846l0 0z" p-id="2754" fill="#00c0be"></path></svg>                        <span>1000+ embedded vimeo player sites supported</span>                    </li>                    <li>                        <svg t="1669288565685" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2753" width="16" height="16"><path d="M959.846 509.535c0 247.319-200.527 447.846-447.846 447.846l0 0c-247.378 0-447.846-200.527-447.846-447.846l0 0c0-247.319 200.467-447.846 447.846-447.846l0 0c247.319 0 447.846 200.527 447.846 447.846l0 0z" p-id="2754" fill="#00c0be"></path></svg>                        <span>Support video downloading in more resolutions e.g. 4k, 2k, 1080p, etc.</span>                    </li>                    <li>                        <svg t="1669288565685" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2753" width="16" height="16"><path d="M959.846 509.535c0 247.319-200.527 447.846-447.846 447.846l0 0c-247.378 0-447.846-200.527-447.846-447.846l0 0c0-247.319 200.467-447.846 447.846-447.846l0 0c247.319 0 447.846 200.527 447.846 447.846l0 0z" p-id="2754" fill="#00c0be"></path></svg>                        <span>Support for downloading private videos</span>                    </li>                    <li>                        <svg t="1669288565685" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2753" width="16" height="16"><path d="M959.846 509.535c0 247.319-200.527 447.846-447.846 447.846l0 0c-247.378 0-447.846-200.527-447.846-447.846l0 0c0-247.319 200.467-447.846 447.846-447.846l0 0c247.319 0 447.846 200.527 447.846 447.846l0 0z" p-id="2754" fill="#00c0be"></path></svg>                        <span>Support for extracting audio</span>                    </li>                    <li>                        <svg t="1669288565685" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2753" width="16" height="16"><path d="M959.846 509.535c0 247.319-200.527 447.846-447.846 447.846l0 0c-247.378 0-447.846-200.527-447.846-447.846l0 0c0-247.319 200.467-447.846 447.846-447.846l0 0c247.319 0 447.846 200.527 447.846 447.846l0 0z" p-id="2754" fill="#00c0be"></path></svg>                        <span>Support for downloading subtitles</span></li>                    <li>                        <svg t="1669288565685" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2753" width="16" height="16"><path d="M959.846 509.535c0 247.319-200.527 447.846-447.846 447.846l0 0c-247.378 0-447.846-200.527-447.846-447.846l0 0c0-247.319 200.467-447.846 447.846-447.846l0 0c247.319 0 447.846 200.527 447.846 447.846l0 0z" p-id="2754" fill="#00c0be"></path></svg>                        <span>Unlimited downloads</span>                    </li>                </ul>            </div>        </div>        <button id="dialog_get" class="dialog_get">Get</button>        <p style="text-align: center;font-size: 12px;color:#888483;margin-bottom: 15px;">Click <span id="payment_method" style="color:#08ABEF;cursor: pointer;">here</span> to get other payment method</p>    </div>    <p style="text-align: center;font-size: 12px;">Tip：Please refresh the page after the payment is successful</p>    </div></div></div></div><div id="payment_popup" style="display:none;"><div class="payment_content"><div id="payment_popup_close" class="dialog_close" style="margin-left: 370px;"><svg t="1669283546396" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4105" width="20" height="20"><path d="M794.8 794.8c-14 14-36.9 14-50.9 0L229.2 280.1c-14-14-14-36.9 0-50.9s36.9-14 50.9 0L794.9 744c13.9 13.9 13.9 36.8-0.1 50.8z" p-id="4106" fill="#2c2c2c"></path><path d="M794.8 229.2c14 14 14 36.9 0 50.9L280.1 794.8c-14 14-36.9 14-50.9 0s-14-36.9 0-50.9L744 229.1c13.9-13.9 36.8-13.9 50.8 0.1z" p-id="4107" fill="#2c2c2c"></path></svg></div><h3 style="text-align:center;margin-top: 20px;line-height:40px;">What is the payment method you want？</h3><p style="text-align:center;font-size:12px;color:#888483">We will gradually support it</p><div class="payment_select"><input type="radio" id="paypal" name="payment_method" value="paypal" class="payment_select_label"><label for="paypal" class="payment_label">PayPal</label><br><input type="radio" id="braintree" name="payment_method" value="braintree" class="payment_select_label"><label for="braintree" class="payment_label">Braintree</label><br><input type="radio" id="alipay" name="payment_method" value="alipay" class="payment_select_label"><label for="alipay" class="payment_label">Alipay</label><br><input type="radio" id="other" name="payment_method" value="other" class="payment_select_label"><label for="other" class="payment_label"><input id="otherPayment"></label></div><button id="pay_submit" style="cursor: pointer;border: none;display: block;border-radius: 5px;background-color: #367ECB;height: 30px;width: 100px;line-height: 30px;margin: 22px auto 17px;font-weight: 600;color: white">Submit</button></div></div></body></html>
